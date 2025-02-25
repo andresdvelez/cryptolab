@@ -1,4 +1,5 @@
 import { Link } from "@/modules/translations/i18n/routing";
+import { GetStartedBtn } from "./GetStartedBtn";
 
 export const NavigationBar = () => {
   return (
@@ -23,10 +24,8 @@ export const NavigationBar = () => {
           >
             Pricing
           </Link>
-          <button className="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg transition-colors">
-            Get Started
-          </button>
         </div>
+        <GetStartedBtn />
       </div>
     </nav>
   );

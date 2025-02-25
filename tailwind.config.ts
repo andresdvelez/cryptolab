@@ -1,5 +1,6 @@
 import { heroui } from "@heroui/react";
 import type { Config } from "tailwindcss";
+import { addDynamicIconSelectors } from "@iconify/tailwind";
 
 export default {
   darkMode: ["class"],
@@ -11,6 +12,7 @@ export default {
     extend: {},
   },
   plugins: [
+    addDynamicIconSelectors(),
     heroui({
       themes: {
         dark: {

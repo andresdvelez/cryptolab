@@ -1,3 +1,5 @@
+import { HeroButtons } from "./HeroButtons";
+
 export const Hero = () => {
   return (
     <section className="container mx-auto px-4 pt-32 pb-20">
@@ -20,14 +22,7 @@ export const Hero = () => {
           real-world applications.
         </p>
 
-        <div className="flex items-center justify-center space-x-4 animate-fade-up">
-          <button className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg font-medium transition-colors">
-            Start Learning
-          </button>
-          <button className="px-8 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg font-medium transition-colors">
-            View Courses
-          </button>
-        </div>
+        <HeroButtons />
       </div>
     </section>
   );
